@@ -32,7 +32,7 @@ export default function Footer() {
           </p>
           <a
             href="mailto:p.nurdwiyansah06@gmail.com"
-            className="text-purple-500 mt-4 block hover:text-purple-400"
+            className="text-white font-bold mt-4 block hover:text-[#605DFF]"
           >
             p.nurdwiyansah06@gmail.com
           </a>
