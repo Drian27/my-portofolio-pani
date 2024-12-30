@@ -1,3 +1,5 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,9 +9,69 @@
   --foreground: #171717;
 }
 
+.shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 500px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 2.1));
+  z-index: 1;
+}
+
+.shadow.top {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.shadow.bottom {
+  bottom: 0;
+}
+
+.ikal { 
+  /* position: absolute; */
+}
+
+.drian {
+  position: relative;
+  top: -999px;
+  bottom: 0px;
+  left: 650px;
+  right: 10px;
+  z-index: -1px;
+}
+
+.h1-csss {
+  width: 80%;
+  height: 80%;
+}
+
+.btn-gallery-cs {
+  font-size: 24px;
+  font-weight: 700;
+  width: 220px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  /* border: 2px solid #fff; */
+  /* background: transparent; */
+  font-style: normal;
+}
+
+.btn-gallery-cs:hover {
+  font-size: 24px;
+  font-weight: 700;
+  width: 220px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  /* border: 2px solid #fff; */
+  /* background: transparent; */
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0F0F0F;
     --foreground: #ededed;
   }
 }
@@ -18,4 +80,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
