@@ -107,7 +107,7 @@ export default function Work() {
       </header>
 
       {/* Konten Work */}
-      <div className="py-10 px-5 max-w-7xl mx-auto pt-20 relative z-10">
+      <div className="lg:mt-10 py-10 px-5 max-w-7xl mx-auto pt-20 relative z-10">
         <h1 className="text-4xl font-bold text-white mb-10">
           Highlight Project
         </h1>
@@ -136,20 +136,30 @@ export default function Work() {
           ))}
         </div>
 
-        {/* Gambar di belakang konten */}
+      </div>
         <div className="img-content-hero-2">
           <div className="content-frame-img-2">
             <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
           </div>
         </div>
 
-        {/* Gambar di belakang konten */}
         <div className="img-content-hero-3">
           <div className="content-frame-img-3">
             <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
           </div>
         </div>
-      </div>
+
+        {/* <div className="img-content-hero-5">
+          <div className="content-frame-img-4">
+            <img className="frame-img-5" src="./ux-design.png" alt="Frame" />
+          </div>
+        </div> */}
+
+        <div className="img-content-hero-5">
+          <div className="content-frame-img-5">
+            <img className="frame-img-5" src="./ui-design.png" alt="Frame" />
+          </div>
+        </div>
 
       {/* Footer */}
       {/* <footer className="bg-black text-white py-8">
