@@ -9,19 +9,28 @@ export default function Header() {
           <ul className="flex gap-8 text-sm font-medium py-1">
             <li className="py-2 group">
               <Link
-                href="/work"
-                className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
+                href="/"
+                className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative font-inter"
               >
-                Work
+                HOME
+                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li className="py-2 group">
+              <Link
+                href="/work"
+                className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative font-inter"
+              >
+                WORK
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li className="py-2 group">
               <Link
                 href="/about"
-                className="text-[#9C9C9C] leading-[1.5] relative"
+                className="text-[#9C9C9C] leading-[1.5] relative font-inter"
               >
-                About
+                ABOUT
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
@@ -34,19 +43,19 @@ export default function Header() {
             </li>
             <li className="py-2 group">
               <Link
-                href="/gallery"
-                className="text-[#9C9C9C] relative"
+                href="/garage"
+                className="text-[#9C9C9C] relative font-inter"
               >
-                Gallery
+                GARAGE
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li className="py-2 group">
               <Link
                 href="/resume"
-                className="text-[#9C9C9C] relative"
+                className="text-[#9C9C9C] relative font-inter"
               >
-                Resume
+                RESUME
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>

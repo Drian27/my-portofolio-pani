@@ -13,10 +13,19 @@ export default function About() {
             <ul className="flex gap-8 text-sm font-medium py-1">
               <li className="py-2 group">
                 <Link
+                  href="/"
+                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
+                >
+                  HOME
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </li>
+              <li className="py-2 group">
+                <Link
                   href="/work"
                   className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
                 >
-                  Work
+                  WORK
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -25,7 +34,7 @@ export default function About() {
                   href="/about"
                   className="text-[#9C9C9C] leading-[1.5] relative"
                 >
-                  About
+                  ABOUT
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -38,13 +47,13 @@ export default function About() {
               </li>
               <li className="py-2 group">
                 <Link href="/gallery" className="text-[#9C9C9C] relative">
-                  Gallery
+                  GARAGE
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
               <li className="py-2 group">
                 <Link href="/resume" className="text-[#9C9C9C] relative">
-                  Resume
+                  RESUME
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -77,28 +86,28 @@ export default function About() {
             <h2 className="text-2xl font-semibold mb-2">Tools</h2>
             <div className="flex space-x-4">
               <Image
-                src="/icons/figma.png"
+                src="/vector-1.png"
                 alt="Figma"
                 width={40}
                 height={40}
                 className="rounded"
               />
               <Image
-                src="/icons/photoshop.png"
+                src="/vector-2.png"
                 alt="Photoshop"
                 width={40}
                 height={40}
                 className="rounded"
               />
               <Image
-                src="/icons/xd.png"
+                src="/vector-3.png"
                 alt="Adobe XD"
                 width={40}
                 height={40}
                 className="rounded"
               />
               <Image
-                src="/icons/illustrator.png"
+                src="/vector-4.png"
                 alt="Illustrator"
                 width={40}
                 height={40}
@@ -361,7 +370,7 @@ export default function About() {
             </p>
             <a
               href="mailto:p.nurdwiyansah06@gmail.com"
-              className="text-white mt-4 block hover:text-purple-400"
+              className="text-white font-bold mt-4 block hover:text-[#605DFF]"
             >
               p.nurdwiyansah06@gmail.com
             </a>

@@ -8,7 +8,8 @@ export default function Work() {
   const projects = [
     {
       id: 1,
-      title: "Integrated communication system to integrate and manage voice, data, and video communication between other work units.",
+      title:
+        "Integrated communication system to integrate and manage voice, data, and video communication between other work units.",
       duration: "Agustus - Desember 2023",
       description:
         "Lorem ipsum dolor sit amet consectetur. Enim enim penatibus ac mi sagittis diam nec.",
@@ -32,7 +33,8 @@ export default function Work() {
     },
     {
       id: 4,
-      title: "Redesigning the hotel room booking process for BANHUB to simplify the user experience",
+      title:
+        "Redesigning the hotel room booking process for BANHUB to simplify the user experience",
       duration: "Februari - Mei 2023",
       description:
         "Lorem ipsum dolor sit amet consectetur. Enim enim penatibus ac mi sagittis diam nec.",
@@ -49,19 +51,28 @@ export default function Work() {
             <ul className="flex gap-8 text-sm font-medium py-1">
               <li className="py-2 group">
                 <Link
-                  href="/work"
-                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
+                  href="/"
+                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative font-inter"
                 >
-                  Work
+                  HOME
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </li>
+              <li className="py-2 group">
+                <Link
+                  href="/work"
+                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative font-inter"
+                >
+                  WORK
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
               <li className="py-2 group">
                 <Link
                   href="/about"
-                  className="text-[#9C9C9C] leading-[1.5] relative"
+                  className="text-[#9C9C9C] leading-[1.5] relative font-inter"
                 >
-                  About
+                  ABOUT
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -73,14 +84,20 @@ export default function Work() {
                 </h1>
               </li>
               <li className="py-2 group">
-                <Link href="/gallery" className="text-[#9C9C9C] relative">
-                  Gallery
+                <Link
+                  href="/gallery"
+                  className="text-[#9C9C9C] relative font-inter"
+                >
+                  GARAGE
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
               <li className="py-2 group">
-                <Link href="/resume" className="text-[#9C9C9C] relative">
-                  Resume
+                <Link
+                  href="/resume"
+                  className="text-[#9C9C9C] relative font-inter"
+                >
+                  RESUME
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -89,52 +106,53 @@ export default function Work() {
         </div>
       </header>
 
-{/* Konten Work */}
-<div className="py-10 px-5 max-w-7xl mx-auto pt-20 relative z-10">
-  <h1 className="text-4xl font-bold text-white mb-10">Highlight Project</h1>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-    {projects.map((project) => (
-      <div
-        key={project.id}
-        className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 relative z-10"
-      >
-        <div className="relative w-full h-56 cursor-pointer">
-          <Image
-            src={project.image}
-            alt={project.title}
-            layout="fill"
-            objectFit="cover"
-          />
+      {/* Konten Work */}
+      <div className="py-10 px-5 max-w-7xl mx-auto pt-20 relative z-10">
+        <h1 className="text-4xl font-bold text-white mb-10">
+          Highlight Project
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 relative z-10"
+            >
+              <div className="relative w-full h-56 cursor-pointer">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="p-5">
+                <h2 className="text-xl font-semibold text-white mb-2">
+                  {project.title}
+                </h2>
+                <p className="text-sm text-gray-400 mb-4">{project.duration}</p>
+                <p className="text-gray-300">{project.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="p-5">
-          <h2 className="text-xl font-semibold text-white mb-2">
-            {project.title}
-          </h2>
-          <p className="text-sm text-gray-400 mb-4">{project.duration}</p>
-          <p className="text-gray-300">{project.description}</p>
+
+        {/* Gambar di belakang konten */}
+        <div className="img-content-hero-2">
+          <div className="content-frame-img-2">
+            <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
+          </div>
+        </div>
+
+        {/* Gambar di belakang konten */}
+        <div className="img-content-hero-3">
+          <div className="content-frame-img-3">
+            <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
+          </div>
         </div>
       </div>
-    ))}
-  </div>
-
-  {/* Gambar di belakang konten */}
-  <div className="img-content-hero-2">
-    <div className="content-frame-img-2">
-      <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
-    </div>
-  </div>
-
-    {/* Gambar di belakang konten */}
-    <div className="img-content-hero-3">
-    <div className="content-frame-img-3">
-      <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
-    </div>
-  </div>
-</div>
-
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8">
+      {/* <footer className="bg-black text-white py-8">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left">
             <h2 className="text-xl font-semibold">JUNN GARAGE</h2>
@@ -174,7 +192,7 @@ export default function Work() {
             </a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

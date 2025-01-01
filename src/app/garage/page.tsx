@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Gallery() {
+export default function Garage() {
   const rowImages: string[][] = [
     ["/project-1.png", "/project-2.png", "/project-3.png"],
     ["/project-4.png", "/project-7.png", "/project-9.png"],
@@ -17,12 +17,21 @@ export default function Gallery() {
         <div className="flex items-center justify-center">
           <nav>
             <ul className="flex gap-8 text-sm font-medium py-1">
+            <li className="py-2 group">
+              <Link
+                href="/"
+                className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
+              >
+                HOME
+                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
               <li className="py-2 group">
                 <Link
                   href="/work"
                   className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
                 >
-                  Work
+                  WORK
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -31,7 +40,7 @@ export default function Gallery() {
                   href="/about"
                   className="text-[#9C9C9C] leading-[1.5] relative"
                 >
-                  About
+                  ABOUT
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -43,14 +52,14 @@ export default function Gallery() {
                 </h1>
               </li>
               <li className="py-2 group">
-                <Link href="/gallery" className="text-[#9C9C9C] relative">
-                  Gallery
+                <Link href="/garage" className="text-[#9C9C9C] relative">
+                  GARAGE
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
               <li className="py-2 group">
                 <Link href="/resume" className="text-[#9C9C9C] relative">
-                  Resume
+                  RESUME
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
