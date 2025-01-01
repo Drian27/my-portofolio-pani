@@ -1,12 +1,23 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Import font Inter dari Google Fonts */
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-family: 'Inter', sans-serif;
+}
+
+.hr-body-cs {
+  width: 198px;
+  height: 10px;
+  background-color: #605DFF;
 }
 
 .shadow {
@@ -15,6 +26,7 @@
   right: 0;
   height: 500px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 2.1));
+  /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.21)); */
   z-index: 1;
 }
 
@@ -27,22 +39,65 @@
   bottom: 0;
 }
 
-.ikal { 
-  /* position: absolute; */
+.group-text-home {
+  z-index: 99999;
 }
 
-.drian {
+.img-home-hero {
+  z-index: 9999;
+}
+
+.img-content-hero { 
   position: relative;
-  top: -999px;
-  bottom: 0px;
-  left: 650px;
-  right: 10px;
-  z-index: -1px;
 }
 
-.h1-csss {
-  width: 80%;
-  height: 80%;
+.img-content-hero-2 { 
+  position: relative;
+  z-index: -1;
+}
+
+.img-content-hero-3 { 
+  position: relative;
+  z-index: -1;
+}
+
+.content-frame-img-1 {
+  position: absolute;
+  left: 520px;
+  bottom: -70px;
+  margin-left: 0px;
+  z-index: 999;
+}
+
+.content-frame-img-2 {
+  position: absolute;
+  left: -172px;
+  bottom: -180px;
+  margin-left: 0px;
+  z-index: 1;
+}
+
+.content-frame-img-3 {
+  position: absolute;
+  right: -470px;
+  bottom: -300px;
+  margin-left: 0px;
+  z-index: 1;
+}
+
+.frame-img-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.frame-img-2 {
+  width: 995.65px;
+  height: auto;
+}
+
+.frame-img-3 {
+  width: 60%;
+  height: 60%;
 }
 
 .btn-gallery-cs {
@@ -52,8 +107,7 @@
   height: 60px;
   padding: 10px;
   border-radius: 10px;
-  /* border: 2px solid #fff; */
-  /* background: transparent; */
+  font-family: var(--font-family); /* Menggunakan font Inter */
   font-style: normal;
 }
 
@@ -64,8 +118,7 @@
   height: 60px;
   padding: 10px;
   border-radius: 10px;
-  /* border: 2px solid #fff; */
-  /* background: transparent; */
+  font-family: var(--font-family); /* Menggunakan font Inter */
   font-style: normal;
 }
 
@@ -79,7 +132,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family); /* Menggunakan font Inter */
 }
 
 html {

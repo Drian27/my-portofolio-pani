@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="text-white px-4 fixed w-full z-50 bg-gradient-to-br bg-black">
       <div className="flex items-center justify-center">
-        <nav>
+        <nav className="mt-5 my-5">
           <ul className="flex gap-8 text-sm font-medium py-1">
             <li className="py-2 group">
               <Link

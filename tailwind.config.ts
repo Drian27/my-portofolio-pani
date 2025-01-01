@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"], // Tambahkan ini
+      },
+      lineHeight: {
+        extra: '50px', // Menambahkan line-height kustom
+      },
     },
   },
   plugins: [],
