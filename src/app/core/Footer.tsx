@@ -1,41 +1,71 @@
-"use client"
+"use client";
 
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left">
-          <h2 className="text-xl font-semibold">JUNN GARAGE</h2>
+        <div className="text-center md:text-left text-xl font-semibold">
+          <h2 className="text-xl font-semibold">
+            <span>JUNN</span>
+            <br />
+            GARAGE
+          </h2>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">
-            <a href="https://www.instagram.com/p.maulana72/" className="text-[#605DFF] text-2xl">
-              <i className="fab fa-instagram"></i>
+            <a
+              href=""
+              className="text-2xl"
+            >
+              <Image
+                src="/instagram.png"
+                alt="Instagram"
+                width={32}
+                height={32}
+              />
             </a>
-            <a href="#" className="text-[#605DFF] text-2xl">
-              <i className="fab fa-github"></i>
+            <a href="" className="text-2xl">
+              <Image
+                src="/whatsapp.png"
+                alt="WhatsApp"
+                width={32}
+                height={32}
+              />
             </a>
-            <a href="https://www.linkedin.com/in/pani-maulana-nurdwiyansah-b93ab3251/" className="text-[#605DFF] text-2xl">
-              <i className="fab fa-linkedin"></i>
+            <a
+              href=""
+              className="text-2xl"
+            >
+              <Image
+                src="/gmail.png"
+                alt="Gmail"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a
+              href=""
+              className="text-2xl"
+            >
+              <Image
+                src="/linkedin.png"
+                alt="Linkedin"
+                width={32}
+                height={32}
+              />
             </a>
           </div>
-          <p className="mt-4 text-sm">
-            © 2024 Junn Garage | All rights reserved
-          </p>
         </div>
 
         <div className="text-center md:text-right mt-8 md:mt-0">
-          <h3 className="text-lg font-semibold">Let’s have a chat!</h3>
-          <p className="mt-2 text-sm">
-            Feel free to discuss collaboration opportunities or just say hello.
-            Please get in touch
+          <h3 className="text-lg font-semibold">Garage of Design</h3>
+          <p className="mt-2 text-xl font-medium">
+            Let's create amazing designs and user experiences.
           </p>
-          <a
-            href="mailto:p.nurdwiyansah06@gmail.com"
-            className="text-white font-bold mt-4 block hover:text-[#605DFF]"
-          >
-            p.nurdwiyansah06@gmail.com
-          </a>
+          <p className="mt-4 text-sm">
+            © 2024 Junn Garage | All rights reserved
+          </p>
         </div>
       </div>
     </footer>

@@ -12,6 +12,7 @@ export default function page() {
         <Body />
         <Work />
         <Gallery />
+        <Footer />
     </div>
   )
 }
