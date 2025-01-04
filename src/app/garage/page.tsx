@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Header from "../ui/Header";
 
 export default function Garage() {
   const rowImages: string[][] = [
@@ -12,7 +11,6 @@ export default function Garage() {
 
   return (
     <div className="bg-black to-gray-900 min-h-screen">
-      <Header />
 
       <div id="gallery" className="relative w-full h-[150vh] overflow-hidden pt-20">
         <div className="absolute inset-0 flex flex-col gap-12 pt-28">
