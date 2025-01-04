@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import Card from "../components/Card";
-import Header from "../ui/Header";
+import Image from "next/image";
 
 export default function Work() {
 
@@ -27,19 +25,19 @@ export default function Work() {
 
       <div className="img-content-hero-2">
         <div className="content-frame-img-2">
-          <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
+          <Image className="frame-img-2" src="/frame-home-2.png" width={100} height={100} alt="Frame" />
         </div>
       </div>
 
       <div className="img-content-hero-3">
         <div className="content-frame-img-3">
-          <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
+          <Image className="frame-img-3" src="/frame-home-3.png" width={100} height={100} alt="Frame" />
         </div>
       </div>
 
       <div className="img-content-hero-5">
         <div className="content-frame-img-5">
-          <img className="frame-img-5" src="./ui-design.png" alt="Frame" />
+          <Image className="frame-img-5" src="/ui-design.png" width={100} height={100} alt="Frame" />
         </div>
       </div>
     </div>

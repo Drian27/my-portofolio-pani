@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "../core/Footer";
 import Header from "../ui/Header";
 
@@ -40,7 +39,7 @@ export default function GarageTwo() {
 
       <div className="img-content-hero">
         <div className="content-frame-img-1-garage">
-          <img className="frame-img-1" src="./frame-home-1.png" alt="" />
+          <Image className="frame-img-1" src="/frame-home-1.png" width={1000} height={500} alt="" />
         </div>
       </div>
 
@@ -56,7 +55,7 @@ export default function GarageTwo() {
 
       <div className="img-content-hero-3">
         <div className="content-frame-img-3-garage">
-          <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
+          <Image className="frame-img-3" src="/frame-home-3.png" width={1000} height={500} alt="Frame" />
         </div>
       </div>
 

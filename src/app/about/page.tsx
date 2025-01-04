@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Header from "../ui/Header";
 import Footer from "../core/Footer";
 
@@ -60,13 +59,13 @@ export default function About() {
 
       <div className="img-content-hero">
         <div className="content-frame-img-1-about">
-          <img className="frame-img-1" src="./frame-home-1.png" alt="" />
+          <Image className="frame-img-1" src="/frame-home-1.png" width={100} height={100} alt="" />
         </div>
       </div>
 
       <div className="img-content-hero-2">
         <div className="content-frame-img-2-about">
-          <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
+          <Image className="frame-img-2" src="/frame-home-2.png" width={100} height={100} alt="Frame" />
         </div>
       </div>
 
@@ -245,7 +244,7 @@ export default function About() {
 
       <div className="img-content-hero-3">
         <div className="content-frame-img-3-about">
-          <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
+          <Image className="frame-img-3" src="/frame-home-3.png" width={100} height={100} alt="Frame" />
         </div>
       </div>
 
