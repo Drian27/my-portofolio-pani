@@ -45,7 +45,7 @@ export default function Footer() {
                 />
               </svg>
             </Link>
-            <Link href="mailto:example@example.com" className="text-2xl" >
+            <Link href="mailto:p.nurdwiyansah06@gmail.com" className="text-2xl" >
               <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3.14199 24.9974H9.57039V2.98034L7.60063 1.69612C4.7503 -0.161074 1 1.91839 1 5.35617V22.8266C1 24.0269 1.96062 24.9999 3.14442 24.9999L3.14199 24.9974Z"
