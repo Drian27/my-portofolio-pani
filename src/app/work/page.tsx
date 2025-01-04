@@ -60,7 +60,7 @@ export default function Work() {
       <div className="min-h-screen w-full grid grid-cols-1 lg:mt-20 lg:pt-20 px-3 relative z-10 pb-28">
         <div className="w-full grid grid-cols-1">
           <div className="w-[90%] p-3 px-5 ">
-            <h1 className="text-4xl font-bold text-white mb-10">Highlight Project</h1>
+            <h1 className="text-4xl lg:text-[56px] font-bold font-inter text-white mb-10 lg:ms-20 ms-0">Highlight Project</h1>
           </div>
         </div>
         <div className="w-full flex justify-center p-1">

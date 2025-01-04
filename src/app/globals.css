@@ -80,7 +80,7 @@
 .content-frame-img-2 {
   position: absolute;
   left: 0px;
-  bottom: 130px;
+  bottom: 300px;
   margin-left: 0px;
   /* z-index: 1; */
 }
@@ -88,7 +88,7 @@
 .content-frame-img-3 {
   position: absolute;
   right: 0px;
-  bottom: -250px;
+  bottom: -90px;
   margin-left: 0px;
   /* z-index: 1; */
 }
@@ -103,7 +103,7 @@
 .content-frame-img-5 {
   position: absolute;
   right: 0px;
-  bottom: 860px;
+  bottom: 1499px;
   margin-left: 0px;
   z-index: 1;
 }
@@ -114,7 +114,8 @@
 }
 
 .frame-img-2 {
-  width: 795.65px;
+  max-width: 80%;
+  /* width: 795.65px; */
   height: auto;
 }
 

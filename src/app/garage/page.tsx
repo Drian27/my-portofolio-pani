@@ -119,11 +119,11 @@ export default function Garage() {
             <h1 className="text-center font-bold text-[100px] text-[#FFFFFF] mb-1">
               MY
             </h1>
-            <h1 className="text-center font-bold text-[100px] text-[#FFFFFF] mb-1">
+            <h1 className="text-center font-bold text-[100px] font-inter text-[#FFFFFF] mb-1">
               GARAGE
             </h1>
           </div>
-          <button className="btn-gallery-cs text-white font-bold text-[42px] w-[385px] h-[100px] bg-transparent backdrop-blur-md border-2 border-white hover:opacity-90 transition-all duration-300">
+          <button className="btn-gallery-cs text-white font-bold text-[42px] font-inter w-[385px] h-[100px] bg-transparent backdrop-blur-md border-2 border-white hover:opacity-90 transition-all duration-300">
             View Garage
           </button>
 
