@@ -87,7 +87,7 @@ export default function PortfolioBody() {
           </div>
         </div>
         <div className="w-full h-full">
-        <div className="z-10 lg:relative">
+        <div className="z-10 relative">
             <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full"/>
           {/* <div className="relative w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[500px] sm:h-[550px] lg:h-[600px] rounded-lg overflow-hidden custom-photo-position">
           </div> */}
