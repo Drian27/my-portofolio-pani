@@ -12,9 +12,9 @@ export default function About() {
       <Header />
 
       {/* Header Section One */}
-      <div className="w-full grid grid-cols-2 gap-4 mt-10 mb-10">
+      <div className="w-full grid grid-cols-2 gap-4 mt-10 mb-20">
         <div className="w-full h-full">
-          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10">
+          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10 z-10 relative">
             <h1 className="w-full text-white text-3xl text-[52px] font-bold lg:whitespace-nowrap mb-5 leading-snug">
               Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let's create <br /> amazing designs and user <br /> experiences.
             </h1>
@@ -45,10 +45,12 @@ export default function About() {
                 <Image src="/icon-tools-4.png" alt="figma" width={50} height={50}></Image>
               </div>
             </div>
+            <div>
+            </div>
           </div>
         </div>
         <div className="w-full h-full">
-          <div className="z-10 lg:relative">
+          <div className="z-10 relative">
             <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full" />
             {/* <div className="relative w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[500px] sm:h-[550px] lg:h-[600px] rounded-lg overflow-hidden custom-photo-position">
                   </div> */}
@@ -56,8 +58,20 @@ export default function About() {
         </div>
       </div>
 
+      <div className="img-content-hero">
+        <div className="content-frame-img-1-about">
+          <img className="frame-img-1" src="./frame-home-1.png" alt="" />
+        </div>
+      </div>
+
+      <div className="img-content-hero-2">
+        <div className="content-frame-img-2-about">
+          <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
+        </div>
+      </div>
+
       {/* Header Section Two */}
-      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10">
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
         <div className="w-full mb-5 lg:ps-10">
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">I am a student from a university in Bogor. Indonesia, and I became interested in the field of</p>
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">UI/UX in 2021. I possess the ability for creative problem-solving, creating engaging and intuitive</p>
@@ -65,7 +79,7 @@ export default function About() {
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">and can work well in a team with good time management skills.</p>
         </div>
 
-        <div className="w-full mb-5 lg:ps-10">
+        <div className="w-full mb-5 lg:ps-10 z-10 relative">
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">I started my career as a freelance UI/UX designer in 2022 with over a year of experience. I have</p>
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">managed numerous web and mobile application projects, helping to transform complex user issues</p>
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">into visually appealing and more organized solutions.</p>
@@ -73,7 +87,7 @@ export default function About() {
       </div>
 
       {/* Header Section Three */}
-      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10">
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
         <div className="mb-5 lg:px-10">
           <h2 className="text-3xl lg:text-[46px] font-inter font-bold text-white mb-10">Career Journey</h2>
           <h3 className="text-3xl lg:text-[34px] font-inter font-semibold text-white">PT. Exenesia – Bogor, Indonesia</h3>
@@ -228,6 +242,13 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <div className="img-content-hero-3">
+        <div className="content-frame-img-3-about">
+          <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
+        </div>
+      </div>
+
 
       <Footer />
     </div>

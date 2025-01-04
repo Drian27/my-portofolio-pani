@@ -10,7 +10,7 @@ export default function PortfolioBody() {
 
       <div className="w-full grid grid-cols-2 gap-4 mt-10">
         <div className="w-full h-full">
-          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-14">
+          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-14 z-10 relative">
             <p className="w-full text-[36px] text-[#9C9C9C] mb-7 font-inter">UI/UX Designer</p>
             <h1 className="w-full text-white text-3xl text-[56px] font-bold lg:whitespace-nowrap mb-10">Pani Maulana Nurdwiyansah</h1>
             <div className="hr-body-cs mb-7"></div>
