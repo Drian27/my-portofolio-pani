@@ -70,11 +70,8 @@ export default function Garage() {
       </header>
 
       {/* Konten Gallery */}
-      <div
-        id="gallery"
-        className="relative w-full h-screen overflow-hidden pt-20"
-      >
-        <div className="absolute inset-0 flex flex-col gap-6">
+      <div id="gallery" className="relative w-full h-[150vh] overflow-hidden pt-20">
+        <div className="absolute inset-0 flex flex-col gap-12 pt-28">
           {rowImages.map((row, rowIndex) => (
             <div
               key={rowIndex}
@@ -118,20 +115,25 @@ export default function Garage() {
         </div>
 
         <div className="w-full relative z-10 text-center transform translate-y-40">
-          <h1 className="text-center text-[#FFFFFF] mb-8 drop-shadow-lg mt-20">
-            <span className="block text-5xl sm:text-5xl lg:text-8xl font-bold">
+          <div className="flex flex-col gap-0 mb-10">
+            <h1 className="text-center font-bold text-[100px] text-[#FFFFFF] mb-1">
               MY
-            </span>
-            <span className="block text-5xl sm:text-5xl lg:text-8xl font-bold">
-              GALLERY
-            </span>
-          </h1>
-          <button className="btn-gallery-cs px-8 py-4 text-white font-semibold text-lg rounded-lg bg-gradient-to-r from-gray-600 via-gray-600 to-gray-600 border-2 border-white hover:opacity-90 transition-all duration-300">
-            GALLERY
+            </h1>
+            <h1 className="text-center font-bold text-[100px] text-[#FFFFFF] mb-1">
+              GARAGE
+            </h1>
+          </div>
+          <button className="btn-gallery-cs text-white font-bold text-[42px] w-[385px] h-[100px] bg-transparent backdrop-blur-md border-2 border-white hover:opacity-90 transition-all duration-300">
+            View Garage
           </button>
+
+          {/* <button className="btn-gallery-cs px-8 py-4 text-white font-semibold text-lg rounded-lg bg-gradient-to-r from-gray-600 via-gray-600 to-gray-600 border-2 border-white hover:opacity-90 transition-all duration-300">
+            View Garage
+          </button> */}
         </div>
 
         <div className="shadow top"></div>
+        <div className="shadow center"></div>
         <div className="shadow bottom"></div>
       </div>
 
