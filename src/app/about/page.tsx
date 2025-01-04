@@ -3,401 +3,256 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../ui/Header";
+import Footer from "../core/Footer";
 
 export default function About() {
   return (
-    <div className="h-auto w-full bg-gradient-to-r bg-black text-white flex flex-col items-center px-6 pb-16">
-      <header className="text-white px-4 fixed w-full z-50 bg-gradient-to-br bg-black">
-        <div className="flex items-center justify-center">
-          <nav>
-            <ul className="flex gap-8 text-sm font-medium py-1">
-              <li className="py-2 group">
-                <Link
-                  href="/"
-                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
-                >
-                  HOME
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="py-2 group">
-                <Link
-                  href="/work"
-                  className="text-[#9C9C9C] scroll-smooth leading-[1.5] relative"
-                >
-                  WORK
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="py-2 group">
-                <Link
-                  href="/about"
-                  className="text-[#9C9C9C] leading-[1.5] relative"
-                >
-                  ABOUT
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li>
-                <h1 className="text-sm font-bold text-center">
-                  <span>JUNN</span>
-                  <br />
-                  GARAGE
-                </h1>
-              </li>
-              <li className="py-2 group">
-                <Link href="/gallery" className="text-[#9C9C9C] relative">
-                  GARAGE
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="py-2 group">
-                <Link href="/resume" className="text-[#9C9C9C] relative">
-                  RESUME
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#605DFF] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <div className="bg-gradient-to-b bg-black to-gray-900 min-h-screen">
+      <Header />
 
-      {/* Header Section */}
-      <div className="max-w-5xl w-full grid md:grid-cols-2 gap-8 items-center mt-8">
-        <div className="space-y-4">
-          {/* <h1 className="text-4xl sm:text-6xl font-bold">
-            Hello... I am Pani Maulana Nurdwiyansah
-          </h1> */}
-          <p className="text-xl sm:text-4xl font-bold ">
-            Hello... I am Pani Maulana Nurdwiyansah, a UI/UX Designer from
-            Indonesia. Let's create amazing designs and user experiences.
-          </p>
-          <div className="flex space-x-8 mt-4">
-            <div>
-              <h2 className="text-3xl font-bold">Experience</h2>
-              <p className="text-xl">+2</p>
+      {/* Header Section One */}
+      <div className="w-full grid grid-cols-2 gap-4 mt-10 mb-20">
+        <div className="w-full h-full">
+          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10 z-10 relative">
+            <h1 className="w-full text-white text-3xl text-[52px] font-bold lg:whitespace-nowrap mb-5 leading-snug">
+              Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let's create <br /> amazing designs and user <br /> experiences.
+            </h1>
+            <div className="w-[80%] flex justify-between gap-5 mb-5">
+              <div className="mb-5 text-start">
+                <h4 className="lg:text-[32px] font-inter font-medium text-white mb-2">Experience</h4>
+                <h3 className="lg:text-[36px] font-inter font-bold text-white">+2</h3>
+              </div>
+              <div className="mb-5 text-start">
+                <h4 className="lg:text-[32px] font-inter font-medium text-white mb-2">Project</h4>
+                <h3 className="lg:text-[36px] font-inter font-bold text-white">+10</h3>
+              </div>
+            </div>
+            <div className="mb-3">
+              <h4 className="lg:text-[32px] font-inter font-medium text-white mb-2">Tools</h4>
+            </div>
+            <div className="flex justify-center lg:justify-start gap-8">
+              <div className="text-[#605DFF] text-2xl hover:opacity-80 transition-opacity">
+                <Image src="/icon-tools-1.png" alt="figma" width={50} height={50}></Image>
+              </div>
+              <div className="text-[#605DFF] text-2xl hover:opacity-80 transition-opacity">
+                <Image src="/icon-tools-2.png" alt="figma" width={50} height={50}></Image>
+              </div>
+              <div className="text-[#605DFF] text-2xl hover:opacity-80 transition-opacity">
+                <Image src="/icon-tools-3.png" alt="figma" width={50} height={50}></Image>
+              </div>
+              <div className="text-[#605DFF] text-2xl hover:opacity-80 transition-opacity">
+                <Image src="/icon-tools-4.png" alt="figma" width={50} height={50}></Image>
+              </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold">Project</h2>
-              <p className="text-xl">+7</p>
-            </div>
-          </div>
-          <div className="mt-6">
-            <h2 className="text-2xl font-semibold mb-2">Tools</h2>
-            <div className="flex space-x-4">
-              <Image
-                src="/vector-1.png"
-                alt="Figma"
-                width={40}
-                height={40}
-                className="rounded"
-              />
-              <Image
-                src="/vector-2.png"
-                alt="Photoshop"
-                width={40}
-                height={40}
-                className="rounded"
-              />
-              <Image
-                src="/vector-3.png"
-                alt="Adobe XD"
-                width={40}
-                height={40}
-                className="rounded"
-              />
-              <Image
-                src="/vector-4.png"
-                alt="Illustrator"
-                width={40}
-                height={40}
-                className="rounded"
-              />
-            </div>
-            <div>
-            <p className="break-words">
-              I am a student from a university in Bogor. Indonesia, and I became
-              interested in the field of UI/UX in 2021. I possess the ability
-              for creative problem-solving, creating engaging and intuitive user
-              interactions and experiences in UI/UX design. I am proficient in
-              using software such as Figma and can work well in a team with good
-              time management skills.
-            </p>
-            <p>
-              I started my career as a freelance UI/UX designer in 2022 with
-              over a year of experience. I have managed numerous web and mobile
-              application projects, helping to transform complex user issues
-              into visually appealing and more organized solutions.
-            </p>
-            <p>
-              I hope to contribute to the UI/UX design industry to create
-              outstanding user experiences, and I am now ready to collaborate
-              with you.
-            </p>
             </div>
           </div>
         </div>
-
-        <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-          <div className="relative w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[500px] sm:h-[550px] lg:h-[600px] rounded-lg overflow-hidden custom-photo-position">
-            <Image
-              src="/hero.png"
-              alt="Pani Maulana"
-              width={1600}
-              height={2000}
-              className="rounded-lg object-cover absolute z-10 py-10 px-5"
-            />
+        <div className="w-full h-full">
+          <div className="z-10 relative">
+            <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full" />
+            {/* <div className="relative w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[500px] sm:h-[550px] lg:h-[600px] rounded-lg overflow-hidden custom-photo-position">
+                  </div> */}
           </div>
         </div>
       </div>
 
-      <div className="mt-16 max-w-5xl w-full mb-5">
-        <h2 className="text-3xl font-bold mb-4">Career Journey</h2>
-        <div className="space-y-6 mb-5">
-          {/* Experience 1 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Nusantara - IKN)
-            </h3>
-            <p className="text-lg">July - Now 2024</p>
+      <div className="img-content-hero">
+        <div className="content-frame-img-1-about">
+          <img className="frame-img-1" src="./frame-home-1.png" alt="" />
+        </div>
+      </div>
+
+      <div className="img-content-hero-2">
+        <div className="content-frame-img-2-about">
+          <img className="frame-img-2" src="./frame-home-2.png" alt="Frame" />
+        </div>
+      </div>
+
+      {/* Header Section Two */}
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
+        <div className="w-full mb-5 lg:ps-10">
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">I am a student from a university in Bogor. Indonesia, and I became interested in the field of</p>
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">UI/UX in 2021. I possess the ability for creative problem-solving, creating engaging and intuitive</p>
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">user interactions and experiences in UI/UX design. I am proficient in using software such as Figma</p>
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">and can work well in a team with good time management skills.</p>
+        </div>
+
+        <div className="w-full mb-5 lg:ps-10 z-10 relative">
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">I started my career as a freelance UI/UX designer in 2022 with over a year of experience. I have</p>
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">managed numerous web and mobile application projects, helping to transform complex user issues</p>
+          <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">into visually appealing and more organized solutions.</p>
+        </div>
+      </div>
+
+      {/* Header Section Three */}
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
+        <div className="mb-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[46px] font-inter font-bold text-white mb-10">Career Journey</h2>
+          <h3 className="text-3xl lg:text-[34px] font-inter font-semibold text-white">PT. Exenesia – Bogor, Indonesia</h3>
+        </div>
+
+        <div className="mb-5 lg:px-10">
+          <h4 className="text-3xl lg:text-[30px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Nusantara - IKN)</h4>
+          <h5 className="text-2xl lg:text-[28px] font-inter font-medium text-white mb-5">July - Now 2024</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>
-                Conduct research with the team to determine the flowchart and
-                design.
-              </li>
-              <li>
-                Create UI designs for the CMS, professors, and user requests.
-              </li>
-              <li>Design a user-friendly interface suitable for all users.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research with the team to determine the flowchart and design related to this project.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the UI design for the CMS, to create, manage, and modify content.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the UI design for user requests, a means to request necessary needs.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the UI design for professors, to monitor all activities on the Nusantara website.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design a user-friendly interface so that users do not find it difficult to use the website.</li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 2 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Snap Corner - Photobox)
-            </h3>
-            <p className="text-lg">September - October - July 2024</p>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Snap Corner - Photobox)</h2>
+          <h5 className="text-2xl lg:text-[28px] font-inter font-medium text-white mb-5">September - October - July 2024</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>
-                Conduct research to understand the needs of owners and users.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to understand the needs of owners and users.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the interface design for the company profile website as well as for online ticket booking.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Design the photobox website interface with a clean UI and user-friendly layout to facilitate user <br /> interaction.
               </li>
-              <li>
-                Design photobox website interfaces with user-friendly layouts.
-              </li>
-              <li>Enhance the user experience by 15%.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Develop a user-friendly UI design that enhances the user experience by 15%.</li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 3 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Piper - Photobooth)
-            </h3>
-            <p className="text-lg">June - July 2024</p>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Piper - Photobooth)</h2>
+          <h5 className="text-2xl lg:text[28px] font-inter font-medium text-white mb-5">June - July 2024</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>Conduct research with owners to identify needs.</li>
-              <li>Create low-fidelity and high-fidelity mockups.</li>
-              <li>Develop a user-friendly UI for ease of use.</li>
-            </ul>
-          </div>
-
-          {/* Experience 4 */}
-          <div>
-            <h3 className="text-2xl font-semibold">Ui/Ux Design (Desa Maju)</h3>
-            <p className="text-lg">January - April 2024</p>
-            <ul className="list-disc pl-6 mt-2">
-              <li>Conduct research to identify the needs of village staff.</li>
-              <li>
-                Collaborate with the development team to design the user
-                interface
-              </li>
-              <li>
-                Creating the interface for security monitoring, video
-                conferencing, training management, and resource management.
-              </li>
-              <li>
-                Design a dark mode color scheme that reflects the Navy's
-                background, symbolizing authority, honor, and strength.
-              </li>
-              <li>Create prototypes and mockups.</li>
-              <li>
-                Develop a mobile application to check training schedules and
-                report training results to the central HO.
-              </li>
-            </ul>
-          </div>
-
-          {/* Experience 5 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Command Center - Angkatan Laut)
-            </h3>
-            <p className="text-lg">August - December 2023</p>
-            <ul className="list-disc pl-6 mt-2">
-              <li>Conduct research to obtain information related to users.</li>
-              <li>
-                Collaborate with the development team to design the user
-                interface
-              </li>
-              <li>
-                Creating the interface for security monitoring, video
-                conferencing, training management, and resource management.
-              </li>
-              <li>
-                Design a dark mode color scheme that reflects the Navy's
-                background, symbolizing authority, honor, and strength.
-              </li>
-              <li>Create prototypes and mockups.</li>
-              <li>
-                Develop a mobile application to check training schedules and
-                report training results to the central HO.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research with the owner to identify what is needed.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create low-fidelity mockups on paper.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design the system and other components.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Start designing in Figma, transitioning from low-fidelity to high-fidelity.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Create a website interface design with a clean UI that is user-friendly to facilitate ease of use for <br /> users.
               </li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 6 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (KomplainKuy)
-            </h3>
-            <p className="text-lg">May - July 2023</p>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Desa Maju)</h2>
+          <h5 className="text-2xl lg:text[28px] font-inter font-medium text-white mb-5">January - April 2024</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>
-                Create low-fidelity wireframes through sketches in a notebook.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to identify the needs of the village staff.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Create a super admin website dashboard to monitor community requests/needs regarding <br /> correspondence.{" "}
               </li>
-              <li>
-                Design the UI according to the flowchart provided by the client,
-                which includes the super admin dashboard, user interface, and
-                mobile app.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                A standout feature of the progressive village is the "Report Village" feature, which allows <br /> residents to report disturbances in the community and will immediately notify village staff with <br /> the location.{" "}
               </li>
-              <li>
-                Design a clean UI that is user-friendly to facilitate ease of
-                use for the application.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Develop a mobile app for residents to submit requests for letter creation online.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create a mobile app that enhances user experience and convenience by 30%.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design a clean UI and user-friendly interface for both applications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Command Center - Angkatan Laut)</h2>
+          <h5 className="text-2xl lg:text[28px] font-inter font-medium text-white mb-5">August - December 2023</h5>
+          <div className="">
+            <ul className="list-disc pl-6 mt-2">
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to obtain information related to users.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Collaborate with the development team to design the user interface</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Creating the interface for security monitoring, video conferencing, training management, and <br /> resource management.
               </li>
-              <li>
-                Use a comfortable dark mode color scheme for users, along with a
-                minimalist layout to enhance usability.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Design a dark mode color scheme that reflects the Navy's background, symbolizing authority, <br /> honor, and strength.{" "}
+              </li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create prototypes and mockups.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Develop a mobile application to check training schedules and report training results to the <br /> central HO.
               </li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 7 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Badan Perhubungan Kalimantan Timur)
-            </h3>
-            <p className="text-lg">February - May 2023</p>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (KomplainKuy)</h2>
+          <h5 className="text-2xl lg:text-[28px] font-inter font-medium text-white mb-5">May - July 2023</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>
-                Redesigning the website to be more interactive and responsive,
-                resulting in a 20% increase in user experience.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create low-fidelity wireframes through sketches in a notebook.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Design the UI according to the flow chart provided by the client, which includes the super admin <br /> dashboard, user interface, and mobile app.
               </li>
-              <li>Conduct research to obtain information related to users.</li>
-              <li>
-                Create the layout for the hotel booking website, including the
-                landing page, account creation, login, gallery, hotel facility
-                details, etc.
-              </li>
-              <li>
-                Design a new landing page that enhances user experience by 30%.
-              </li>
-              <li>
-                Implement detailed coloring in the design to improve the visual
-                appeal for users.
-              </li>
-              <li>
-                Create a clean UI design that is user-friendly to facilitate
-                user interaction with the website in terms of images, colors,
-                layout, etc.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design a clean UI that is user-friendly to facilitate ease of use for the application.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Use a comfortable dark mode color scheme for users, along with a minimalist layout to enhance <br /> usability.
               </li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 8 */}
-          <div>
-            <h3 className="text-2xl font-semibold">Dummy Project</h3>
-            <p className="text-lg">
-              Ui/Ux Design (Ghania Beef – Online Beef Shopping Application)
-            </p>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Badan Perhubungan Kalimantan Timur)</h2>
+          <h5 className="text-2xl lg:text-[28px] font-inter font-medium text-white mb-5">February - May 2023</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>Design the UI for online beer ordering.</li>
-              <li>
-                Ensure compatibility across different devices and resolutions.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Redesigning the website to be more interactive and responsive, resulting in a 20% increase in <br /> user experience.
               </li>
-              <li>
-                Enhance the overall user experience with a modern, clean design.
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to obtain information related to users.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Create the layout for the hotel booking website, including the landing page, account creation, <br /> login, gallery, hotel facility details, etc.{" "}
+              </li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design a new landing page that enhances user experience by 30%.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Implement detailed coloring in the design to improve the visual appeal for users.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
+                Create a clean UI design that is user-friendly to facilitate user interaction with the website in <br /> terms of images, colors, layout, etc.
               </li>
             </ul>
           </div>
+        </div>
 
-          {/* Experience 9 */}
-          <div>
-            <h3 className="text-2xl font-semibold">
-              Ui/Ux Design (Grocery App)
-            </h3>
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Dummy Project</h2>
+          <h5 className="text-2xl lg:text-[28px] font-inter font-medium text-white mb-5">Ui/Ux Design (Ghania Beef – Online Beef Shopping Application)</h5>
+          <div className="">
             <ul className="list-disc pl-6 mt-2">
-              <li>Create wireframes.</li>
-              <li>
-                Design the system including colors, text, button bar, and button
-                styles.
-              </li>
-              <li>
-                Create the user interface for the home page, product details,
-                etc.
-              </li>
-              <li>
-                Create the UI for the home page, product details, shopping cart,
-                order details, profile, etc.
-              </li>
-              <li>Clean design to facilitate user experience.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design the UI for online beef ordering.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create a system design that includes colors, text, button bar, and button styles.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Develop the login and account creation page.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the order and profile page</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-5 lg:px-10">
+          <h2 className="text-3xl lg:text-[34px] font-inter font-semibold text-white mb-8">Ui/Ux Design (Grocery App)</h2>
+          <div className="">
+            <ul className="list-disc pl-6 mt-2">
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create wireframes.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design the system including colors, text, button bar, and button styles.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the user interface for the home page, product details, etc.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create the UI for the home page, product details, shopping cart, order details, profile, etc.</li>
+              <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Clean design to facilitate user experience.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-black text-white py-8">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold">JUNN GARAGE</h2>
-            <div className="flex justify-center md:justify-start space-x-4 mt-4">
-              <a
-                href="https://www.instagram.com/p.maulana72/"
-                className="text-[#605DFF] text-2xl"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="text-[#605DFF] text-2xl">
-                <i className="fab fa-github"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/pani-maulana-nurdwiyansah-b93ab3251/"
-                className="text-[#605DFF] text-2xl"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </div>
-            <p className="mt-4 text-sm">
-              © 2024 Junn Garage | All rights reserved
-            </p>
-          </div>
-
-          <div className="text-center md:text-right mt-8 md:mt-0">
-            <h3 className="text-lg font-semibold">Let’s have a chat!</h3>
-            <p className="mt-2 text-sm">
-              Feel free to discuss collaboration opportunities or just say
-              hello. Please get in touch
-            </p>
-            <a
-              href="mailto:p.nurdwiyansah06@gmail.com"
-              className="text-white font-bold mt-4 block hover:text-[#605DFF]"
-            >
-              p.nurdwiyansah06@gmail.com
-            </a>
-          </div>
+      <div className="img-content-hero-3">
+        <div className="content-frame-img-3-about">
+          <img className="frame-img-3" src="./frame-home-3.png" alt="Frame" />
         </div>
-      </footer>
+      </div>
+
+
+      <Footer />
     </div>
+
+    
   );
 }
