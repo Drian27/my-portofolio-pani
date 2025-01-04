@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import Footer from "../core/Footer";
 import Header from "../ui/Header";
 
 export default function Garage() {

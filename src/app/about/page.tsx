@@ -15,7 +15,7 @@ export default function About() {
         <div className="w-full h-full">
           <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10 z-10 relative">
             <h1 className="w-full text-white text-3xl text-[52px] font-bold lg:whitespace-nowrap mb-5 leading-snug">
-              Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let's create <br /> amazing designs and user <br /> experiences.
+              Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let&apos;s create <br /> amazing designs and user <br /> experiences.
             </h1>
             <div className="w-[80%] flex justify-between gap-5 mb-5">
               <div className="mb-5 text-start">
@@ -147,7 +147,7 @@ export default function About() {
                 Create a super admin website dashboard to monitor community requests/needs regarding <br /> correspondence.{" "}
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                A standout feature of the progressive village is the "Report Village" feature, which allows <br /> residents to report disturbances in the community and will immediately notify village staff with <br /> the location.{" "}
+                A standout feature of the progressive village is the &quot;Report Village&quot; feature, which allows <br /> residents to report disturbances in the community and will immediately notify village staff with <br /> the location.{" "}
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Develop a mobile app for residents to submit requests for letter creation online.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create a mobile app that enhances user experience and convenience by 30%.</li>
@@ -167,7 +167,7 @@ export default function About() {
                 Creating the interface for security monitoring, video conferencing, training management, and <br /> resource management.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                Design a dark mode color scheme that reflects the Navy's background, symbolizing authority, <br /> honor, and strength.{" "}
+                Design a dark mode color scheme that reflects the Navy&apos;s background, symbolizing authority, <br /> honor, and strength.{" "}
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create prototypes and mockups.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">

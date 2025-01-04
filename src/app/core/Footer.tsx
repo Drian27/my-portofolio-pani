@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="text-center md:text-right mt-8 md:mt-0">
           <h3 className="text-lg lg:text-[32px] font-semibold text-white mb-5">Garage of Design</h3>
           <p className="mt-2 text-xl font-regular lg:text-[24px] text-white leading-tight mb-5">
-            Let's create amazing designs and user <br /> experiences.
+            Let&apos;s create amazing designs and user <br /> experiences.
           </p>
           <p className="mt-4 text-sm lg:text-[18px] text-white">
             © 2024 Junn Garage | All rights reserved
