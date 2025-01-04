@@ -65,12 +65,12 @@ export default function About() {
       {/* Header Section */}
       <div className="max-w-5xl w-full grid md:grid-cols-2 gap-8 items-center mt-8">
         <div className="space-y-4">
-          <h1 className="text-4xl sm:text-6xl font-bold">
+          {/* <h1 className="text-4xl sm:text-6xl font-bold">
             Hello... I am Pani Maulana Nurdwiyansah
-          </h1>
-          <p className="text-lg sm:text-xl">
-            A UI/UX Designer from Indonesia. Let's create amazing designs and
-            user experiences.
+          </h1> */}
+          <p className="text-xl sm:text-4xl font-bold ">
+            Hello... I am Pani Maulana Nurdwiyansah, a UI/UX Designer from
+            Indonesia. Let's create amazing designs and user experiences.
           </p>
           <div className="flex space-x-8 mt-4">
             <div>
@@ -113,6 +113,27 @@ export default function About() {
                 height={40}
                 className="rounded"
               />
+            </div>
+            <div>
+            <p className="break-words">
+              I am a student from a university in Bogor. Indonesia, and I became
+              interested in the field of UI/UX in 2021. I possess the ability
+              for creative problem-solving, creating engaging and intuitive user
+              interactions and experiences in UI/UX design. I am proficient in
+              using software such as Figma and can work well in a team with good
+              time management skills.
+            </p>
+            <p>
+              I started my career as a freelance UI/UX designer in 2022 with
+              over a year of experience. I have managed numerous web and mobile
+              application projects, helping to transform complex user issues
+              into visually appealing and more organized solutions.
+            </p>
+            <p>
+              I hope to contribute to the UI/UX design industry to create
+              outstanding user experiences, and I am now ready to collaborate
+              with you.
+            </p>
             </div>
           </div>
         </div>
