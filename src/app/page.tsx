@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './ui/Header'
 import Body from './ui/Body'
 import Work from './work/page'
 import Gallery from './garage/page'
