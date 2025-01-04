@@ -25,19 +25,19 @@ export default function Work() {
 
       <div className="img-content-hero-2">
         <div className="content-frame-img-2">
-          <Image className="frame-img-2" src="/frame-home-2.png" width={100} height={100} alt="Frame" />
+          <Image className="frame-img-2" src="/frame-home-2.png" width={1000} height={100} alt="Frame" />
         </div>
       </div>
 
       <div className="img-content-hero-3">
         <div className="content-frame-img-3">
-          <Image className="frame-img-3" src="/frame-home-3.png" width={100} height={100} alt="Frame" />
+          <Image className="frame-img-3" src="/frame-home-3.png" width={1000} height={100} alt="Frame" />
         </div>
       </div>
 
       <div className="img-content-hero-5">
         <div className="content-frame-img-5">
-          <Image className="frame-img-5" src="/ui-design.png" width={100} height={100} alt="Frame" />
+          <Image className="frame-img-5" src="/ui-design.png" width={1000} height={100} alt="Frame" />
         </div>
       </div>
     </div>

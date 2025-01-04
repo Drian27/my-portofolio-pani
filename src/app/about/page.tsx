@@ -51,21 +51,19 @@ export default function About() {
         <div className="w-full h-full">
           <div className="z-10 relative">
             <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full" />
-            {/* <div className="relative w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[500px] sm:h-[550px] lg:h-[600px] rounded-lg overflow-hidden custom-photo-position">
-                  </div> */}
           </div>
         </div>
       </div>
 
       <div className="img-content-hero">
         <div className="content-frame-img-1-about">
-          <Image className="frame-img-1" src="/frame-home-1.png" width={100} height={100} alt="" />
+          <Image className="frame-img-1" src="/frame-home-1.png" width={1000} height={500} alt="" />
         </div>
       </div>
 
       <div className="img-content-hero-2">
         <div className="content-frame-img-2-about">
-          <Image className="frame-img-2" src="/frame-home-2.png" width={100} height={100} alt="Frame" />
+          <Image className="frame-img-2" src="/frame-home-2.png" width={1000} height={500} alt="Frame" />
         </div>
       </div>
 
@@ -144,10 +142,10 @@ export default function About() {
             <ul className="list-disc pl-6 mt-2">
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to identify the needs of the village staff.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                Create a super admin website dashboard to monitor community requests/needs regarding <br /> correspondence.{" "}
+                Create a super admin website dashboard to monitor community requests/needs regarding <br /> correspondence.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                A standout feature of the progressive village is the &quot;Report Village&quot; feature, which allows <br /> residents to report disturbances in the community and will immediately notify village staff with <br /> the location.{" "}
+                A standout feature of the progressive village is the &quot;Report Village&quot; feature, which allows <br /> residents to report disturbances in the community and will immediately notify village staff with <br /> the location.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Develop a mobile app for residents to submit requests for letter creation online.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create a mobile app that enhances user experience and convenience by 30%.</li>
@@ -167,7 +165,7 @@ export default function About() {
                 Creating the interface for security monitoring, video conferencing, training management, and <br /> resource management.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                Design a dark mode color scheme that reflects the Navy&apos;s background, symbolizing authority, <br /> honor, and strength.{" "}
+                Design a dark mode color scheme that reflects the Navy&apos;s background, symbolizing authority, <br /> honor, and strength.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Create prototypes and mockups.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
@@ -204,7 +202,7 @@ export default function About() {
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Conduct research to obtain information related to users.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">
-                Create the layout for the hotel booking website, including the landing page, account creation, <br /> login, gallery, hotel facility details, etc.{" "}
+                Create the layout for the hotel booking website, including the landing page, account creation, <br /> login, gallery, hotel facility details, etc.
               </li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Design a new landing page that enhances user experience by 30%.</li>
               <li className="text-2xl lg:text-[20px] font-inter font-medium text-white mb-1">Implement detailed coloring in the design to improve the visual appeal for users.</li>

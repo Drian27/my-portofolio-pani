@@ -10,7 +10,7 @@ export default function Resume() {
           Hello... I am Pani Maulana Nurdwiyansah
         </h1>
         <p className="text-lg sm:text-xl mb-10">
-          A UI/UX Designer from Indonesia. Let's create amazing designs and user
+          A UI/UX Designer from Indonesia. Let&apos;s create amazing designs and user
           experiences.
         </p>
         <a
@@ -51,7 +51,7 @@ export default function Resume() {
           </div>
 
           <div className="text-center md:text-right mt-8 md:mt-0">
-            <h3 className="text-lg font-semibold">Let’s have a chat!</h3>
+            <h3 className="text-lg font-semibold">Let&apos;s have a chat!</h3>
             <p className="mt-2 text-sm">
               Feel free to discuss collaboration opportunities or just say
               hello. Please get in touch
