@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-gradient-to-b bg-black to-gray-900 py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left w-[50%]">
           <div className="w-[25%]">
-            <h2 className="text-xl lg:text-[36px] font-inter font-bold leading-tight text-center">
+            <h2 className="text-xl lg:text-[36px] font-inter font-bold text-white leading-tight text-center">
               JUNN <br /> GARAGE
             </h2>
           </div>
