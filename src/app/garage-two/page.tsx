@@ -26,7 +26,7 @@ export default function GarageTwo() {
       <Header />
 
       {/* Konten Gallery */}
-      <div className="w-full flex justify-center gap-4 mt-28 pt-16 z-10 relative">
+      <div className="w-full flex justify-center gap-4 mt-28 pt-16 z-10 relative ">
         <div className="w-full grid grid-cols-1 gap-4 mb-20">
           <div className="text-center">
             <div className="relative">
