@@ -95,7 +95,7 @@ export default function GarageTwo() {
 
   return (
     <div className="bg-gradient-to-b bg-black to-gray-900 min-h-screen">
-      3 {/* Konten Header */}
+      {/* Konten Header */}
       <Header />
       {/* Konten Gallery */}
       <div className="w-full flex justify-center gap-4 mt-28 pt-16 z-10 relative">
