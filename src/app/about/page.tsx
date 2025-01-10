@@ -28,7 +28,7 @@ export default function About() {
               </div>
             </div>
             <div className="lg:mb-3">
-              <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white lg:mb-2 mb-4">Tools</h4>
+              <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white lg:mb-8 mb-4">Tools</h4>
             </div>
             <div className="flex justify-center lg:justify-start gap-8">
               <div className="text-[#605DFF] text-2xl hover:opacity-80 transition-opacity">

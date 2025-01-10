@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Work() {
 
   return (
-    <div className="bg-gradient-to-b bg-black to-gray-900 min-h-screen pt-28 ">
+    <div className="bg-gradient-to-b bg-black to-gray-900 min-h-screen pt-10">
       {/* Konten Header */}
       {/* <Header /> */}
 

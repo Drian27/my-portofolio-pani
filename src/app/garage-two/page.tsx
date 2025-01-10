@@ -102,8 +102,8 @@ export default function GarageTwo() {
         <div className="w-full grid grid-cols-1 gap-4 mb-20">
           <div className="text-center">
             <div className="relative">
-              <h1 className="text-5xl lg:text-[70px] font-inter font-bold text-white mb-5 transform rotate-20-cs absolute -top-16 left-garage-cs">MY</h1>
-              <h1 className="text-5xl lg:text-[70px] font-inter font-bold text-white pt-5">GARAGE</h1>
+              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-white mb-24 transform rotate-20-cs absolute -top-16 left-garage-cs">MY</h1>
+              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-white pt-24">GARAGE</h1>
             </div>
           </div>
         </div>

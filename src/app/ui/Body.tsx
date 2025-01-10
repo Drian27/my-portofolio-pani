@@ -8,12 +8,12 @@ export default function PortfolioBody() {
     <div id="about" className="bg-gradient-to-b bg-black to-gray-900 min-h-screen">
       <Header />
 
-      <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 p-2 px-10 lg:p-3 lg:px-20">
-        <div className="w-full h-full mb-5">
+      <div className="w-full grid grid-cols-2 gap-4 mt-10">
+        <div className="w-full h-full">
           <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-14 z-10 relative">
-            <p className="w-full text-lg sm:text-lg md:text-lg lg:text-[36px] text-[#9C9C9C] mb-4 lg:mb-7 font-inter">UI/UX Designer</p>
-            <h1 className="w-full text-white text-4xl lg:text-[58px] font-bold lg:whitespace-nowrap mb-5 lg:mb-10">Pani Maulana Nurdwiyansah</h1>
-            <div className="hr-body-cs w-full lg:w-[198px] mb-7"></div>
+          <p className="w-full text-lg sm:text-lg md:text-lg lg:text-[36px] text-[#9C9C9C] mb-4 lg:mb-12 font-inter">UI/UX Designer</p>
+            <h1 className="w-full text-white text-4xl lg:text-[58px] font-bold lg:whitespace-nowrap mb-5 lg:mb-12">Pani Maulana Nurdwiyansah</h1>
+            <div className="hr-body-cs w-full lg:w-[198px] mb-9"></div>
             <p className="text-[#9C9C9C] text-lg lg:text-[24px] lg:leading-extra mb-7">
               I am capable of creating engaging and intuitive <br /> user interactions and experiences in UI/UX <br /> design, as well as solving user problems <br />
               through compelling narratives and innovative <br /> design solutions.
