@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="w-full py-5 z-10 relative">
-      <nav className="w-full bg-transparent backdrop-blur-md border-none hover:opacity-90 transition-all duration-300 z-10 relative">
+      <nav className="w-full border-none hover:opacity-90 transition-all duration-300 z-10 relative">
         <ul className="flex justify-center items-center gap-8 text-sm font-medium py-1 z-10 relative">
           <li className="py-2 group">
             <Link href="/" className="text-[#9C9C9C] text-[18px] font-inter font-medium scroll-smooth relative">
