@@ -34,31 +34,37 @@ const Card = () => {
   ];
 
   return (
-    <div className="w-[90%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 p-3 px-5 pb-0 justify-center">
+    <div className="w-full sm:w-full lg:w-[90%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 p-3 px-5 pb-0 justify-center">
       {projects.map((project) => (
-        <div key={project.id} className="w-full bg-[#292929] text-white shadow-lg rounded-3xl flex flex-col justify-between">
+        <div
+          key={project.id}
+          className="w-full bg-[#292929] text-white shadow-lg rounded-3xl flex flex-col justify-between group transition-all duration-300 hover:bg-gradient-to-t hover:from-[#450b73] hover:via-[#722d9a]/90 hover:to-transparent hover:shadow-2xl"
+        >
           {/* Image Section */}
           <div className="w-full p-4 rounded-t-lg">
             <div className="w-full h-auto relative rounded-lg overflow-hidden">
               <Image
                 src={project.image}
                 alt={project.title}
-                width={500} // Ganti ukuran sesuai kebutuhan
-                height={300} // Ganti ukuran sesuai kebutuhan
+                width={500} // Ukuran sesuai kebutuhan
+                height={300} // Ukuran sesuai kebutuhan
                 objectFit="cover"
                 className="rounded-lg w-full"
               />
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#450b73] via-[#722d9a]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-5 pt-[250px] z-20">
+                {/* Overlay berada di atas teks dengan z-20 */}
+              </div>
             </div>
           </div>
 
           {/* Content Section */}
-          <div className="flex flex-col p-5 gap-3">
+          <div className="flex flex-col p-5 gap-3 relative z-10">
             <h3 className="text-[24px] font-inter text-white font-semibold">{project.title}</h3>
             <p className="text-[18px] font-inter font-medium text-white">{project.date}</p>
           </div>
-
           {/* Description Section */}
-          <div className="p-5 pt-0">
+          <div className="p-5 pt-0 relative z-10">
             <p className="text-[18px] font-inter font-regular text-[#CDCDCD]">{project.description}</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,11 +7,10 @@
 
 /* Import font Inter dari Google Fonts */
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-family: 'Inter', sans-serif;
+  --font-family: "Inter", sans-serif;
 }
 
 .ful-height {
@@ -21,13 +20,13 @@
 .hr-cs {
   width: 100%;
   height: 1px;
-  background: #4B576B;
+  background: #4b576b;
 }
 
 .hr-body-cs {
-  width: 198px;
+  /* width: 198px; */
   height: 10px;
-  background-color: #605DFF;
+  background-color: #605dff;
 }
 
 .shadow {
@@ -65,16 +64,16 @@
   z-index: 9999;
 }
 
-.img-content-hero { 
+.img-content-hero {
   position: relative;
 }
 
-.img-content-hero-2 { 
+.img-content-hero-2 {
   position: relative;
   /* z-index: -1; */
 }
 
-.img-content-hero-3 { 
+.img-content-hero-3 {
   position: relative;
   /* z-index: -1; */
 }
@@ -188,7 +187,7 @@
   height: auto;
 }
 
-.frame-img-5{
+.frame-img-5 {
   width: 680px;
   height: auto;
 }
@@ -208,7 +207,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0F0F0F;
+    --background: #0f0f0f;
     --foreground: #ededed;
   }
 }
@@ -221,4 +220,49 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Untuk Tablet (ukuran layar antara 768px dan 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .content-frame-img-1 {
+  }
+}
+
+/* Untuk Mobile (ukuran layar kurang dari 768px) */
+@media (max-width: 768px) {
+  .content-frame-img-1 {
+    display: none;
+  }
+
+  .tess {
+    height: auto;
+  }
+
+  .content-frame-img-4 {
+    display: none;
+  }
+
+  .content-frame-img-5 {
+    display: none;
+  }
+
+  .mt-cs-mobile {
+    margin-bottom: 15px;
+  }
+
+  .content-frame-img-1-garage {
+    display: none;
+  }
+
+  .img-content-hero-3 {
+    display: none;
+  }
+
+  .left-garage-cs {
+    left: 11rem;
+  }
+
+  .content-frame-img-1-about {
+    display: none;
+  }
 }

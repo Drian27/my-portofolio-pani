@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b bg-black to-gray-900 py-8 p-3 px-20">
+    <footer className="bg-gradient-to-b bg-black to-gray-900 py-8 lg:p-3 lg:px-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left w-[50%]">
-          <div className="w-[25%]">
+        <div className="text-center md:text-left w-full lg:w-[50%]">
+          <div className="w-full lg:w-[25%]">
             <h2 className="text-xl lg:text-[36px] font-inter font-bold text-white leading-tight text-center">
               JUNN <br /> GARAGE
             </h2>
@@ -82,8 +82,8 @@ export default function Footer() {
         </div>
 
         <div className="text-center md:text-right mt-8 md:mt-0">
-          <h3 className="text-lg lg:text-[32px] font-semibold text-white mb-5">Garage of Design</h3>
-          <p className="mt-2 text-xl font-regular lg:text-[24px] text-white leading-tight mb-5">
+          <h3 className="text-xl lg:text-[32px] font-semibold text-white mb-5">Garage of Design</h3>
+          <p className="mt-2 text-sm font-regular lg:text-[24px] text-white leading-tight mb-5">
             Let&apos;s create amazing designs and user <br /> experiences.
           </p>
           <p className="mt-4 text-sm lg:text-[18px] text-white">
