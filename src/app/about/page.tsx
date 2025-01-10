@@ -19,11 +19,11 @@ export default function About() {
             </h1>
             <div className="w-full lg:w-[80%] flex justify-between gap-5 mb-5">
               <div className="mb-5 text-start">
-                <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white mb-2">Experience</h4>
+                <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white lg:mb-6 sm:mb-5">Experience</h4>
                 <h3 className="lg:text-[36px] font-inter font-bold text-white">+2</h3>
               </div>
               <div className="mb-5 text-start">
-                <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white mb-2">Project</h4>
+                <h4 className="lg:text-[32px] text-xl font-inter font-medium text-white lg:mb-6 sm:mb-5">Project</h4>
                 <h3 className="lg:text-[36px] font-inter font-bold text-white">+10</h3>
               </div>
             </div>
