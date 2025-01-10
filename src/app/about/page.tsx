@@ -11,10 +11,10 @@ export default function About() {
       <Header />
 
       {/* Header Section One */}
-      <div className="w-full grid grid-cols-2 gap-4 mt-10 mb-20">
+      <div className="w-full grid grid-cols-2 gap-4 mt-10 mb-20 p-3 px-20">
         <div className="w-full h-full">
           <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10 z-10 relative">
-            <h1 className="w-full text-white text-3xl text-[52px] font-bold lg:whitespace-nowrap mb-5 leading-snug">
+            <h1 className="w-full text-white text-3xl text-[56px] font-bold lg:whitespace-nowrap mb-5 leading-snug">
               Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let&apos;s create <br /> amazing designs and user <br /> experiences.
             </h1>
             <div className="w-[80%] flex justify-between gap-5 mb-5">
@@ -68,7 +68,7 @@ export default function About() {
       </div>
 
       {/* Header Section Two */}
-      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative p-3 px-20">
         <div className="w-full mb-5 lg:ps-10">
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">I am a student from a university in Bogor. Indonesia, and I became interested in the field of</p>
           <p className="lg:text-[24px] font-inter lg:whitespace-nowrap mb-3 leading-none font-medium text-white">UI/UX in 2021. I possess the ability for creative problem-solving, creating engaging and intuitive</p>
@@ -84,7 +84,7 @@ export default function About() {
       </div>
 
       {/* Header Section Three */}
-      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative">
+      <div className="w-full grid grid-cols-1 gap-4 mt-10 mb-10 z-10 relative p-3 px-20">
         <div className="mb-5 lg:px-10">
           <h2 className="text-3xl lg:text-[46px] font-inter font-bold text-white mb-10">Career Journey</h2>
           <h3 className="text-3xl lg:text-[34px] font-inter font-semibold text-white">PT. Exenesia – Bogor, Indonesia</h3>

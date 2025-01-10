@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Header from "../ui/Header";
 
 export default function Garage() {
   const rowImages: string[][] = [
@@ -68,7 +67,7 @@ export default function Garage() {
         }
 
         .animate-scroll-left {
-          animation: scroll-horizontal-left 30s linear infinite;
+          animation: scroll-horizontal-right 30s linear infinite reverse;
         }
       `}</style>
     </div>

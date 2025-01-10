@@ -116,7 +116,7 @@
 
 .content-frame-img-1-garage {
   position: absolute;
-  left: 500px;
+  right: 0px;
   bottom: -330px;
   margin-left: 0px;
   /* z-index: 999; */
