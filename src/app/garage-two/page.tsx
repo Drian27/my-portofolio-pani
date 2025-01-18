@@ -98,12 +98,12 @@ export default function GarageTwo() {
       {/* Konten Header */}
       <Header />
       {/* Konten Gallery */}
-      <div className="w-full flex justify-center gap-4 mt-28 pt-16 z-10 relative">
+      <div className="w-full flex justify-center gap-4 mt-3 pt-0 z-10 relative">
         <div className="w-full grid grid-cols-1 gap-4 mb-20">
-          <div className="text-center">
+          <div className="text-center mt-5 lg:mt-0">
             <div className="relative">
-              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-white mb-24 transform rotate-20-cs absolute -top-16 left-garage-cs">MY</h1>
-              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-white pt-24">GARAGE</h1>
+              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-center text-white lg:mb-24 mb-10 transform rotate-20-cs lg:absolute lg:-top-16 lg:left-garage-cs">MY</h1>
+              <h1 className="text-5xl lg:text-[100px] font-inter font-bold text-white lg:pt-24">GARAGE</h1>
             </div>
           </div>
         </div>

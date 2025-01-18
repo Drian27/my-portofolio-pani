@@ -11,9 +11,9 @@ export default function About() {
       <Header />
 
       {/* Header Section One */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 mb-20 lg:p-3 lg:px-20 p-1 px-5">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-1 mb-20 lg:p-3 lg:px-20 p-1 px-5">
         <div className="w-full h-full mb-8">
-          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-10 z-10 relative">
+          <div className="group-text-home text-center lg:text-left px-12 mt-0 pt-0 z-10 relative">
             <h1 className="w-full text-white text-3xl lg:text-[56px] font-bold lg:whitespace-nowrap lg:mb-5 mb-7 leading-snug">
               Hello... I am Pani Maulana <br /> Nurdwiyansah, a UI/UX Designer <br /> from Indonesia. Let&apos;s create <br /> amazing designs and user <br /> experiences.
             </h1>
@@ -49,7 +49,7 @@ export default function About() {
           </div>
         </div>
         <div className="w-full h-full">
-          <div className="z-10 relative">
+          <div className="z-10 relative p-5 px-5 lg:p-5 lg:px-5">
             <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full" />
           </div>
         </div>

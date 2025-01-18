@@ -8,9 +8,9 @@ export default function PortfolioBody() {
     <div id="about" className="bg-gradient-to-b bg-black to-gray-900 min-h-screen">
       <Header />
 
-      <div className="w-full grid grid-cols-2 gap-4 mt-10">
+      <div className="w-full grid flex-col lg:grid-cols-2 gap-4 mt-0 lg:mt-10 lg:p-0 lg:px-0 p-1 px-5">
         <div className="w-full h-full">
-          <div className="group-text-home text-center lg:text-left px-12 mt-10 pt-14 z-10 relative">
+          <div className="group-text-home text-center lg:text-left px-12 mt-0 lg:mt-10 pt-1 z-10 relative">
           <p className="w-full text-lg sm:text-lg md:text-lg lg:text-[36px] text-[#9C9C9C] mb-4 lg:mb-12 font-inter">UI/UX Designer</p>
             <h1 className="w-full text-white text-4xl lg:text-[58px] font-bold lg:whitespace-nowrap mb-5 lg:mb-12">Pani Maulana Nurdwiyansah</h1>
             <div className="hr-body-cs w-full lg:w-[198px] mb-9"></div>
@@ -87,8 +87,8 @@ export default function PortfolioBody() {
           </div>
         </div>
         <div className="w-full h-full">
-        <div className="z-10 relative">
-            <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess w-full"/>
+        <div className="w-full h-full z-10 relative p-5 px-5 lg:p-5 lg:px-5">
+            <Image src="/hero.png" alt="Pani Maulana" width={1600} height={2000} className="tess lg:w-full sm:w-[50%] text-center sm:p-5 sm:px-10"/>
         </div>
         </div>
       </div>
