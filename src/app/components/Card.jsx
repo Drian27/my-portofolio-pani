@@ -9,13 +9,15 @@ const Card = () => {
       date: "August - December 2023",
       description: "This technology enables fast and efficient information exchange between military leaders and troops in the field.",
       image: "/card-portfolio-1.png",
+      subtitle: "Command Center Dekstop",
     },
     {
       id: 2,
-      title: "monitor the training schedule and report the training results",
+      title: "Monitor the training schedule and report the training results",
       date: "August - December 2023",
-      description: "reporting training results becomes easy and efficient anywhere and anytime",
+      description: "Reporting training results becomes easy and efficient anywhere and anytime",
       image: "/card-portfolio-2.png",
+      subtitle: "Command Center App",
     },
     {
       id: 3,
@@ -23,13 +25,15 @@ const Card = () => {
       date: "July - Nov 2024",
       description: "Managing smart building data in the Capital City of Nusantara, Indonesia, for use by state officials.",
       image: "/card-portfolio-3.png",
+      subtitle: "Nusantara (IKN)",
     },
     {
       id: 4,
       title: "Redesigning the hotel room booking process for BANHUB to simplify the user experience",
-      date: "February - Mey 2023",
+      date: "February - May 2023",
       description: "Successfully made hotel room bookings easier and improved user experience by 50%.",
       image: "/card-portfolio-4.png",
+      subtitle: "Badan Penghubung KALTIM",
     },
   ];
 
@@ -38,7 +42,7 @@ const Card = () => {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="w-full bg-[#292929] text-white shadow-lg rounded-3xl flex flex-col justify-between group transition-all duration-300 hover:bg-gradient-to-t hover:from-[#450b73] hover:via-[#722d9a]/90 hover:to-transparent hover:shadow-2xl"
+          className="w-full bg-[#292929] text-white shadow-lg rounded-3xl flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl"
         >
           {/* Image Section */}
           <div className="w-full p-4 rounded-t-lg">
@@ -52,19 +56,21 @@ const Card = () => {
                 className="rounded-lg w-full"
               />
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#450b73] via-[#722d9a]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-5 pt-[250px] z-20">
-                {/* Overlay berada di atas teks dengan z-20 */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
+                <p className="text-white font-semibold text-[20px] lg:text-[22px]">
+                  {project.subtitle}
+                </p>
               </div>
             </div>
           </div>
 
           {/* Content Section */}
-          <div className="flex flex-col p-5 gap-3 relative z-10">
+          <div className="flex flex-col p-5 gap-3 relative">
             <h3 className="text-[24px] font-inter text-white font-semibold">{project.title}</h3>
             <p className="text-[18px] font-inter font-medium text-white">{project.date}</p>
           </div>
           {/* Description Section */}
-          <div className="p-5 pt-0 relative z-10">
+          <div className="p-5 pt-0">
             <p className="text-[18px] font-inter font-regular text-[#CDCDCD]">{project.description}</p>
           </div>
         </div>

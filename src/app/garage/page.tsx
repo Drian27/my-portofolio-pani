@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Garage() {
   const rowImages: string[][] = [
@@ -11,19 +12,45 @@ export default function Garage() {
 
   return (
     <div className="bg-black to-gray-900 min-h-screen">
-      <div id="gallery" className="relative w-full h-[150vh] overflow-hidden pt-20">
+      <div
+        id="gallery"
+        className="relative w-full h-[150vh] overflow-hidden pt-20"
+      >
         <div className="absolute inset-0 flex flex-col lg:gap-12 gap-1 pt-28">
           {rowImages.map((row, rowIndex) => (
-            <div key={rowIndex} className={`flex w-full sm:h-[12%] lg:h-[23%] sm:w-full lg:w-[100%] ${rowIndex % 2 === 0 ? "animate-scroll-right" : "animate-scroll-left"} gap-2 lg:gap-4`}>
+            <div
+              key={rowIndex}
+              className={`flex w-full sm:h-[12%] lg:h-[23%] sm:w-full lg:w-[100%] ${
+                rowIndex % 2 === 0
+                  ? "animate-scroll-right"
+                  : "animate-scroll-left"
+              } gap-2 lg:gap-4`}
+            >
               {row.map((image, index) => (
-                <div key={`${rowIndex}-${index}`} className="relative w-[20vw] h-[30vh] flex-shrink-0">
-                  <Image src={image} alt={`Gallery Image ${rowIndex}-${index}`} layout="fill" className="rounded-lg lg:object-cover object-contain sm:w-full sm:h-auto" />
+                <div
+                  key={`${rowIndex}-${index}`}
+                  className="relative w-[20vw] h-[30vh] flex-shrink-0"
+                >
+                  <Image
+                    src={image}
+                    alt={`Gallery Image ${rowIndex}-${index}`}
+                    layout="fill"
+                    className="rounded-lg lg:object-cover object-contain sm:w-full sm:h-auto"
+                  />
                 </div>
               ))}
 
               {row.map((image, index) => (
-                <div key={`${rowIndex}-dup-${index}`} className="relative w-[20vw] h-[30vh] flex-shrink-0">
-                  <Image src={image} alt={`Gallery Image ${rowIndex}-${index} (Duplicate)`} layout="fill" className="rounded-lg lg:object-cover object-contain sm:w-full sm:h-auto" />
+                <div
+                  key={`${rowIndex}-dup-${index}`}
+                  className="relative w-[20vw] h-[30vh] flex-shrink-0"
+                >
+                  <Image
+                    src={image}
+                    alt={`Gallery Image ${rowIndex}-${index} (Duplicate)`}
+                    layout="fill"
+                    className="rounded-lg lg:object-cover object-contain sm:w-full sm:h-auto"
+                  />
                 </div>
               ))}
             </div>
@@ -32,10 +59,18 @@ export default function Garage() {
 
         <div className="w-full relative z-10 text-center transform translate-y-40">
           <div className="flex flex-col gap-0 mb-1 lg:mb-10 mt-cs-mobile">
-            <h1 className="text-center font-bold text-[36px] lg:text-[100px] text-[#FFFFFF] mb-0 lg:mb-1">MY</h1>
-            <h1 className="text-center font-bold text-[36px] lg:text-[100px] font-inter text-[#FFFFFF] mb-2 lg:mb-1">GARAGE</h1>
+            <h1 className="text-center font-bold text-[36px] lg:text-[100px] text-[#FFFFFF] mb-0 lg:mb-1">
+              MY
+            </h1>
+            <h1 className="text-center font-bold text-[36px] lg:text-[100px] font-inter text-[#FFFFFF] mb-2 lg:mb-1">
+              GARAGE
+            </h1>
           </div>
-          <button className="btn-gallery-cs text-white font-bold text-[20px] lg:text-[42px] font-inter w-[180px] h-[45px] lg:w-[385px] lg:h-[100px] bg-transparent backdrop-blur-md border-2 border-white hover:opacity-90 transition-all duration-300">View Garage</button>
+          <Link href="/garage-two">
+            <button className="btn-gallery-cs text-white font-bold text-[20px] lg:text-[42px] font-inter w-[180px] h-[45px] lg:w-[385px] lg:h-[100px] bg-transparent hover:opacity-100 hover:bg-transparent backdrop-blur-md border-2 border-white hover:bg-gradient-to-r hover:from-[#605DFF] hover:to-[#A168FF] transition-all duration-300 ease-in-out">
+              View Garage
+            </button>
+          </Link>
         </div>
 
         <div className="shadow top"></div>
