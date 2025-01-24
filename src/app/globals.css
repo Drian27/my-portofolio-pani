@@ -226,6 +226,10 @@ html {
 @media (max-width: 1024px) and (min-width: 768px) {
   .content-frame-img-1 {
   }
+
+  .left-garage-cs {
+    left: 0px;
+  }
 }
 
 /* Untuk Mobile (ukuran layar kurang dari 768px) */
@@ -264,5 +268,9 @@ html {
 
   .content-frame-img-1-about {
     display: none;
+  }
+
+  .left-garage-cs {
+    left: 0px;
   }
 }
